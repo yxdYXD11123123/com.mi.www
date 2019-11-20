@@ -28,6 +28,55 @@
     font-size: 13px;
 }
 
+/*   下载APP 二维码    */
+.topnav-left .app {
+    position: relative;
+}
+
+.topnav-left .app > span {
+    position: absolute;
+    display: none;
+    top: 39px;
+    left: -34px;
+    width: 110px;
+    background-color: white;
+    text-align: center;
+    line-height: 0px;
+    box-shadow: 0px 0px 4px 0px grey;
+}
+
+.topnav-left .app > span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 8px solid transparent;
+    border-right:  8px solid transparent;
+    border-bottom: 8px solid white;
+    top: -18px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.topnav-left .app > span > img {
+    width: 90px;
+    height: 90px;
+    margin: 10px 10px 0px 10px;
+}
+.topnav-left .app > span > em {
+    display: block;
+    color: #333333;
+    font-size: 11px;
+    line-height: 39px;
+    font-weight: 400;
+}
+
+.topnav-left .app:hover span {
+    display: block;
+}
+
 .topnav-right {
     float: right;
 }
@@ -79,7 +128,15 @@
     height: 50px;
     width: 50px;
     background-color: #ff6700;
+    background-image: url(../img/mi-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
     margin-top: calc( ( 100px - 50px ) / 2 );
+}
+
+.searchnav-logo:hover {
+    background-image: url(../img/mi-home.png);
+    background-repeat: no-repeat;
 }
 
 .searchnav-nav {
@@ -168,4 +225,102 @@
 .searchnav-search-hotkeys > a:hover {
     color: white;
     background-color: #ff6700;
+}
+
+/* 轮播图 */
+.carousel-photo > li > a {
+    display: block;
+    height: 460px;
+}
+
+.carousel-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 234px;
+    height: 460px;
+    box-sizing: border-box;
+    background-color: rgba(105,101,101,.6);
+    padding-top: calc( (460px - (42px * 10)) / 2 );
+}
+
+.carousel-left > a {
+    display: block;
+    height: 42px;
+    /* background-color: turquoise; */
+    line-height: 42px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    font-weight: 700;
+    color: #fff;
+    padding-right: 24px;
+}
+
+.carousel-left > a:hover {
+    background-color: #ff6700;
+}
+
+.carousel-left > a > i {
+    float: right;
+    font-weight: 400;
+    font-size: 16px;
+}
+.carousel-prev {
+    position: absolute;
+    height: 69px;
+    width: 41px;
+    left: 234px;
+    top: 50%;
+    margin-top: -35px;
+    font-size: 38px;
+    line-height: 69px;
+    text-align: center;
+    cursor: pointer;
+    color: #a3a8ab;
+}
+
+.carousel-prev i,
+.carousel-next i {
+    line-height: 75px;
+}
+
+.carousel-next {
+    position: absolute;
+    height: 69px;
+    width: 41px;
+    right: 0px;
+    top: 50%;
+    margin-top: -35px;
+    font-size: 38px;
+    line-height: 69px;
+    text-align: center;
+    cursor: pointer;
+    color: #a3a8ab;
+}
+
+.carousel-next:hover,
+.carousel-prev:hover {
+    background-color: #000d13;
+    color: white;
+}
+
+.carousel-bullet {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+
+}
+.carousel-bullet li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    border: 2px solid hsla(0,0%,100%,.3);
+    background-color: rgba(0,0,0,.4);
+    margin: 0 4px;
+    border-radius: 50%;
+}
+.carousel-bullet li:hover {
+    background-color: hsla(0,0%,100%,.4);
+    border-color: rgba(0,0,0,.4);
 }
