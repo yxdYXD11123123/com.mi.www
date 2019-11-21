@@ -43,6 +43,7 @@
     text-align: center;
     line-height: 0px;
     box-shadow: 0px 0px 4px 0px grey;
+    z-index: 1;
 }
 
 .topnav-left .app > span:before {
@@ -306,8 +307,8 @@
 
 .carousel-bullet {
     position: absolute;
-    right: 30px;
-    bottom: 40px;
+    right: 40px;
+    bottom: 30px;
 
 }
 .carousel-bullet li {
@@ -323,4 +324,205 @@
 .carousel-bullet li:hover {
     background-color: hsla(0,0%,100%,.4);
     border-color: rgba(0,0,0,.4);
+}
+
+/* 优惠栏 */
+.discount {
+    height: 170px;
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+
+.discount-left {
+    float: left;
+    width: 234px;
+    height: 170px;
+    background-color: #5f5750;
+}
+
+.discount-left > a {
+    float: left;
+    position: relative;
+    width: calc( 234px / 3 );
+    height: calc( 170px / 2 );
+    box-sizing: border-box;
+    /* border: 1px solid hotpink; */
+    color: white;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.discount-left > a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: 1px;
+    background-color: #665e57;
+    top: 2px;
+    left: 9px;
+}
+
+.discount-left > a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 70px;
+    background-color: #665e57;
+    top: 9px;
+    left: 3px;
+}
+
+.discount-left > a:hover {
+    opacity: 1;
+}
+
+.discount-left > a > img {
+    margin-top: 22px;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+.discount-left > a > span {
+    display: block;
+}
+
+.discount > .container > a {
+    float: left;
+    height: 170px;
+    width: 316px;
+    background-color: hotpink;
+    margin-left: 15px;
+}
+
+.discount > .container > a:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+.discount > .container > a > img {
+    height: 100%;
+    width: 100%;
+}
+
+.discount > .container > a:nth-child(2) {
+    margin-left: 14px;
+}
+
+/* 闪购栏 */
+.flash {
+    height: 402px;
+    background-color: #f5f5f5;
+}
+
+.flash-title {
+    height: 62px;
+}
+
+.flash-title > h1 {
+    float: left;
+    font-size: 22px;
+    font-weight: 100;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei";
+    line-height: 62px;
+}
+
+.flash-title > div{
+    float: right;
+    margin-top: 28px;
+}
+
+.flash-title > div > a {
+    float: left;
+    width: 34px;
+    height: 22px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    color: #b0b0b1;
+}
+.flash-title > div > a > i {
+    line-height: 22px;
+    font-size: 16px;
+ 
+}
+
+.flash-title > div > a:hover {
+    color: #ff6700;
+}
+
+.flash-content {
+    height: 340px;
+}
+
+.flash-content-seckill {
+    float: left;
+    height: 340px;
+    width: 234px;
+    background-color: #f1eded;
+    box-sizing: border-box;
+    border-top: 1px solid #e53935;
+    text-align: center;
+}
+
+.flash-content-seckill h2 {
+    color: #e53935;
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: 58px;
+    margin-bottom: 30px;
+}
+
+.flash-content-seckill h3 {
+    margin-top: 34px;
+    color: #6f6d6d;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.flash-content-seckill > div {
+    margin-top: 32px;
+}
+
+.flash-content-seckill > div > span {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    background-color: #605751;
+    font-size: 24px;
+    line-height: 46px;
+    color: white;
+}
+
+.flash-content-seckill > div > i {
+    display: inline-block;
+    font-size: 28px;
+    width: 15px;
+    color: #605751;
+}
+.flash-content-product {
+    float: right;
+    height: 340px;
+}
+
+.flash-content-product > a {
+    float: left;
+    width: 234px;
+    height: 340px;
+    box-sizing: border-box;
+    border-top: 1px solid #00c0a5;  
+    margin-left: 14px;
+    background-color: #fafafa;
+}
+
+.flash-content-product a:nth-child(1) {
+    border-color: #83c44e;
+}
+
+.flash-content-product a:nth-child(2) {
+    border-color: #ffac13;
+}
+
+.flash-content-product a:nth-child(3) {
+    border-color: #e53935;
 }
