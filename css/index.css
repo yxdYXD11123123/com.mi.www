@@ -416,6 +416,7 @@
     background-color: #f5f5f5;
 }
 
+/* 闪购标题 */
 .flash-title {
     height: 62px;
 }
@@ -451,10 +452,12 @@
     color: #ff6700;
 }
 
+/* 闪购活动内容 */
 .flash-content {
     height: 340px;
 }
 
+/* 闪购倒计时 */
 .flash-content-seckill {
     float: left;
     height: 340px;
@@ -500,29 +503,98 @@
     width: 15px;
     color: #605751;
 }
+
+/* 闪购产品 */
 .flash-content-product {
     float: right;
     height: 340px;
 }
 
 .flash-content-product > a {
+    position: relative;
     float: left;
     width: 234px;
     height: 340px;
     box-sizing: border-box;
     border-top: 1px solid #00c0a5;  
     margin-left: 14px;
-    background-color: #fafafa;
+    text-align: center;
+    background-color: white;
+    font-size: 14px;
+}
+
+/* 原本每个产品的背景都为白色，用伪元素after给它们都加上一个半透明遮罩 */
+.flash-content-product > a:after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 234px;
+    height: 339px;
+    background-color: rgba(0,0,0,.02);
+}
+
+.flash-content-product > a > img {
+    width: 160px;
+    height: 160px;
+    margin-top: 39px;
+}
+
+.flash-content-product > a > h1 {
+    margin-top: 30px;
+    color: #202020;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.flash-content-product > a p:nth-child(3) {
+      color: #b0b0b0; 
+      font-size: 12px;
+}
+
+.flash-content-product > a p:nth-child(4) {
+    margin-top: 18px;
+    color: #fa6509;
+} 
+
+.flash-content-product > a p:nth-child(4) small {
+    color: #b0b0b0; 
+    text-decoration: line-through;
+    font-size: 12px;
 }
 
 .flash-content-product a:nth-child(1) {
     border-color: #83c44e;
 }
 
+
 .flash-content-product a:nth-child(2) {
     border-color: #ffac13;
 }
 
+.flash-content-product a:nth-child(2) span {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 20px;
+    background-color: #e53935;
+    color: white;
+    line-height: 20px;
+    font-size: 12px;
+}
+
 .flash-content-product a:nth-child(3) {
     border-color: #e53935;
+}
+
+/* 闪购底部的广告 */
+.flash-ad {
+    margin: 22px 0;
+    display: block;
+    height: 120px;
+}
+.flash-ad img {
+    height: 120px;
 }
