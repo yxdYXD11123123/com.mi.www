@@ -722,9 +722,122 @@
 }
 /* 手机栏底部广告 */
 .phone-ad {
-    margin: 36px 0px;
+    margin-top: 36px;
 }
 .phone-ad a {
     display: block;
     height: 120px;
+}
+
+/* 视频栏 */
+
+.video {
+    padding: 36px 0px;
+    background-color: #f5f5f5;
+}
+.video-title {
+    height: 58px;
+}
+.video-title h2 {
+    float: left;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+}
+
+.video-title > a {
+    float: right;
+    height: 20px;
+    margin-top: 19px;
+    transition: all 0.4s;
+}
+
+.video-title > a > span {
+    float: left;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.video-title > a > div {
+    margin-top: -1px;
+    font-size: 12px;
+    float: left;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 22px;
+    background-color: #b0b0b0;
+    border-radius: 16px;
+    margin-left: 8px;
+    color: white;
+    transition: all .4s;
+}
+
+.video-title > a:hover {
+    color: #ff6700;
+}
+
+.video-title > a:hover div {
+    background-color: #ff6700;
+}
+
+
+.video-content {
+    height: 285px;
+    /* background-color: #00c0a5; */
+}
+
+.video-content > li {
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 285px;
+    background-color: #fff;
+    margin-right: 14px;
+    transition: all .2s linear;
+}
+
+.video-content > li:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    transform:  translate3d(0,-2px,0);
+}
+.video-content-play > div {
+    height: 177px;
+}
+
+.video-content > li:nth-child(4) {
+    margin-right: 0px;
+}
+
+.video-content > li h3 {
+    line-height: 77px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.video-content > li span {
+    display: block;
+    position: absolute;
+    top: 146px;
+    left: 15px;
+    width: 36px;
+    height: 24px;
+    border: 2px solid white;
+    border-radius: 12px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 24px;
+    background-color: rgba(0,0,0,.6);
+    transition: all .2s linear;
+}
+
+.video-content > li i {
+    font-size: 24px;
+    color: white;
+}
+
+.video-content-play > div:hover span {
+    background-color: #ff6700;
+    border-color: #ff6700;
 }
