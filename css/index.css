@@ -732,7 +732,7 @@
 /* 视频栏 */
 
 .video {
-    padding: 36px 0px;
+    padding: 36px 0px 26px 0px;
     background-color: #f5f5f5;
 }
 .video-title {
@@ -840,4 +840,49 @@
 .video-content-play > div:hover span {
     background-color: #ff6700;
     border-color: #ff6700;
+}
+
+/* 售后栏 */
+.after-sale {
+    height: 80px;
+}
+.after-sale > div {
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.after-sale ul {
+    height: 25px;
+}
+
+.after-sale ul li {
+    float: left;
+    height: 25px;
+    width: 244px;
+    margin-top: calc( (80px - 25px) / 2);
+    box-sizing: border-box;
+    border-right: 1px solid #e0e0e0;
+    line-height: 25px;
+    text-align: center;
+}
+
+.after-sale ul li:last-child {
+    border: none;
+}
+
+.after-sale li a {
+    font-size: 16px;
+    color: #616161;
+    transition: all .2s linear;
+}
+
+.after-sale li a:hover {
+    color: #ff6700;
+}
+
+.after-sale a > i {
+    font-size: 24px;
+    vertical-align: -4px;
+    margin-right: 6px;
 }
